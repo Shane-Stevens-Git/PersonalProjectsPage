@@ -29,4 +29,4 @@ then visit http://localhost:8000.
 ## Projects on the page
 
 - [Flowing Curve Generator](https://github.com/Shane-Stevens-Git/Curvy_Line)
-- [Lightbox Studio](https://github.com/Shane-Stevens-Git/RayTracer) (lives in the ray tracer repo)
+- [Lightbox Studio](https://github.com/Shane-Stevens-Git/LightboxStudio)
