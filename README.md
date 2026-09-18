@@ -28,5 +28,7 @@ then visit http://localhost:8000.
 
 ## Projects on the page
 
-- [Flowing Curve Generator](https://github.com/Shane-Stevens-Git/Curvy_Line)
-- [Lightbox Studio](https://github.com/Shane-Stevens-Git/LightboxStudio)
+- Flowing Curve Generator: [project page](https://shane-stevens-git.github.io/Curvy_Line/), [GitHub](https://github.com/Shane-Stevens-Git/Curvy_Line)
+- Lightbox Studio: [live app](https://shane-stevens-git.github.io/LightboxStudio/), [GitHub](https://github.com/Shane-Stevens-Git/LightboxStudio)
+
+This page itself is served by GitHub Pages at https://shane-stevens-git.github.io/PersonalProjectsPage/.
