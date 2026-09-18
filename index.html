@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shane's Projects</title>
+  <meta name="description" content="My personal projects page: a short description of each thing I've built, with pictures and links to every project.">
+  <meta name="theme-color" content="#0d0e11">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Shane's Projects, back to top">
+        <span class="brand-dot" aria-hidden="true"></span>Shane's Projects
+      </a>
+      <nav aria-label="Projects">
+        <a href="#curve">Curve Generator</a>
+        <a href="#lightbox">Lightbox Studio</a>
+        <a class="nav-gh" href="https://github.com/Shane-Stevens-Git" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Intro ============ -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Personal projects</p>
+          <h1>Things I've built, all in one place.</h1>
+          <p class="lede">
+            This is my personal projects page. Scroll down and you'll find a short
+            description of each project, a few pictures, and a link to its page.
+          </p>
+          <a class="scroll-cue" href="#curve">See the projects <span aria-hidden="true">&darr;</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="images/curve-hero.webp" width="1200" height="1200" alt="" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Project 01: Flowing Curve Generator ============ -->
+    <section class="project reveal" id="curve" style="--accent: var(--teal); --accent-soft: var(--teal-soft);">
+      <div class="wrap">
+        <header class="project-head">
+          <span class="index">01</span>
+          <div>
+            <h2>Flowing Curve Generator</h2>
+            <p class="tagline">One unbroken line that fills a whole shape.</p>
+          </div>
+        </header>
+
+        <div class="project-grid">
+          <div class="project-copy">
+            <p>
+              It draws a single, continuous, non-intersecting organic line from edge to
+              edge, like one long strand of string laid down by hand. Pick a shape (or draw
+              your own boundary), tune how it flows, then export it as a PNG, an SVG, or a
+              pen-plotter-ready SVG sized in real millimeters.
+            </p>
+            <p>
+              There's also a looping &ldquo;color crawl&rdquo; mode with chasing lights, which
+              can run as an animated live wallpaper or a screen saver on Windows.
+            </p>
+
+            <ul class="tags" aria-label="Built with">
+              <li>Python 3.10+</li>
+              <li>Tkinter desktop app</li>
+              <li>Windows &middot; macOS &middot; Linux</li>
+            </ul>
+
+            <ul class="features">
+              <li><strong>Fill any shape.</strong> Eight built-in shapes, or draw your own boundary freehand.</li>
+              <li><strong>Any canvas size.</strong> Square, widescreen, or any rectangle, filled with no cropping.</li>
+              <li><strong>Draw-in animation.</strong> Watch the curve get traced stroke by stroke.</li>
+              <li><strong>Pen-plotter export.</strong> Clean SVG in real-world millimeters.</li>
+              <li><strong>Live wallpaper and screen saver.</strong> The color crawl, on your Windows desktop.</li>
+            </ul>
+
+            <div class="actions">
+              <a class="btn primary" href="https://github.com/Shane-Stevens-Git/Curvy_Line" rel="noopener">View on GitHub <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </div>
+
+          <div class="project-media">
+            <figure class="shot window zoomable">
+              <img src="images/curve-app.webp" width="882" height="675" loading="lazy"
+                   alt="The Flowing Curve Generator desktop app: sliders on the left, and a circle filled by one continuous white line on the right.">
+              <figcaption>The desktop app: controls on the left, live preview on the right.</figcaption>
+            </figure>
+
+            <div class="thumbs">
+              <figure class="shot zoomable">
+                <img src="images/curve-square.webp" width="600" height="600" loading="lazy"
+                     alt="A square filled edge to edge by a single winding line.">
+                <figcaption>Square fill</figcaption>
+              </figure>
+              <figure class="shot zoomable">
+                <img src="images/curve-star.webp" width="600" height="600" loading="lazy"
+                     alt="A star shape filled by a single winding line.">
+                <figcaption>Star fill</figcaption>
+              </figure>
+              <figure class="shot zoomable">
+                <img src="images/curve-crawl.webp" width="600" height="600" loading="lazy"
+                     alt="Short multicolored dashes of light chasing along the curve on a dark background.">
+                <figcaption>Color crawl</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Project 02: Lightbox Studio ============ -->
+    <section class="project reveal" id="lightbox" style="--accent: var(--amber); --accent-soft: var(--amber-soft);">
+      <div class="wrap">
+        <header class="project-head">
+          <span class="index">02</span>
+          <div>
+            <h2>Lightbox Studio</h2>
+            <p class="tagline">A 3D lighting and materials sandbox that runs in the browser.</p>
+          </div>
+        </header>
+
+        <div class="project-grid flip">
+          <div class="project-copy">
+            <p>
+              Drop shapes and lights into a scene, move them around with a gizmo, and watch
+              how materials, glow, and shadows respond in real time. It's a single HTML file
+              built on Three.js, so there's nothing to install and no build step.
+            </p>
+            <p>
+              Scenes built here can also be exported and rendered by my C++ ray tracer (more below).
+            </p>
+
+            <ul class="tags" aria-label="Built with">
+              <li>JavaScript</li>
+              <li>Three.js</li>
+              <li>WebGL</li>
+            </ul>
+
+            <ul class="features">
+              <li><strong>Shapes, lights, and a sun.</strong> Multiple lights, plus glowing objects that act as light sources.</li>
+              <li><strong>Materials and textures.</strong> Shadow softness, bloom, and ground and backdrop presets.</li>
+              <li><strong>Real editing tools.</strong> Multi-select, snapping, grouping, array and radial duplicates, undo and redo.</li>
+              <li><strong>Import and save.</strong> Bring in 3D models, and save or load scenes as files.</li>
+              <li><strong>Starter templates.</strong> Studio Trio, Still Life, and Neon Night.</li>
+            </ul>
+
+            <div class="actions">
+              <a class="btn primary" href="https://github.com/Shane-Stevens-Git/RayTracer" rel="noopener">View on GitHub <span aria-hidden="true">&rarr;</span></a>
+              <a class="btn" href="https://github.com/Shane-Stevens-Git/RayTracer/blob/main/sandbox/lightbox-studio.html" rel="noopener">Lightbox Studio source</a>
+            </div>
+          </div>
+
+          <div class="project-media">
+            <figure class="shot window zoomable">
+              <img src="images/lightbox-neon.webp" width="1440" height="860" loading="lazy"
+                   alt="Lightbox Studio showing the Neon Night template: a glowing pillar and ring on a dark ground, with the scene panel on the right.">
+              <figcaption>The Neon Night template, with bloom turned on.</figcaption>
+            </figure>
+            <figure class="shot window zoomable">
+              <img src="images/lightbox-sunset.webp" width="1440" height="860" loading="lazy"
+                   alt="Lightbox Studio showing the Still Life template: a crate and a copper ring under a sunset backdrop.">
+              <figcaption>The Still Life template under a sunset backdrop.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Companion: the ray tracer -->
+        <div class="companion">
+          <div class="companion-copy">
+            <h3>Also in the repo: a C++ ray tracer</h3>
+            <p>
+              Lightbox Studio lives inside my ray tracer's repository. The ray tracer is a
+              from-scratch C++17 renderer that follows the <em>Ray Tracing in One Weekend</em>
+              series: diffuse, metal, and glass materials, depth of field, multithreaded
+              rendering, and a bounding volume hierarchy to keep big scenes fast.
+            </p>
+          </div>
+          <div class="strip">
+            <figure class="shot zoomable">
+              <img src="images/ray-normals.webp" width="400" height="225" loading="lazy" alt="Ray tracer render of a sphere colored by its surface normals, in pink, blue, and green.">
+              <figcaption>Surface normals</figcaption>
+            </figure>
+            <figure class="shot zoomable">
+              <img src="images/ray-diffuse.webp" width="400" height="225" loading="lazy" alt="Ray tracer render of a single pink diffuse sphere resting on a gray ground.">
+              <figcaption>Diffuse</figcaption>
+            </figure>
+            <figure class="shot zoomable">
+              <img src="images/ray-materials.webp" width="400" height="225" loading="lazy" alt="Ray tracer render of a clear glass sphere, a blue sphere, and a gold metal sphere on a yellow-green ground.">
+              <figcaption>Metal and glass</figcaption>
+            </figure>
+            <figure class="shot zoomable">
+              <img src="images/ray-final.webp" width="800" height="450" loading="lazy" alt="Ray tracer render of many small colored spheres with three large ones in the foreground, with depth of field.">
+              <figcaption>Final scene</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Closing note ============ -->
+    <section class="more reveal">
+      <div class="wrap">
+        <p class="more-title">More on the way.</p>
+        <p>New projects will show up here as I build them.</p>
+      </div>
+    </section>
+
+    <!--
+      TO ADD A PROJECT: copy one whole <section class="project ..."> block above,
+      paste it before the "Closing note" section, change the number, title, text,
+      images, and links, and add a link for it to the <nav> at the top.
+      Set its colors with:  style="--accent: var(--teal); --accent-soft: var(--teal-soft);"
+      (or --amber / --amber-soft, or your own colors).
+    -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Made by Shane</span>
+      <a href="https://github.com/Shane-Stevens-Git/PersonalProjectsPage" rel="noopener">Source for this page</a>
+    </div>
+  </footer>
+
+  <!-- Click-to-enlarge viewer for images -->
+  <dialog id="viewer" aria-label="Enlarged image">
+    <form method="dialog"><button class="close" aria-label="Close">&times;</button></form>
+    <img alt="">
+    <p class="viewer-cap"></p>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
