@@ -20,6 +20,7 @@
       <nav aria-label="Projects">
         <a href="#curve">Curve Generator</a>
         <a href="#lightbox">Lightbox Studio</a>
+        <a href="#gravsim">GravSim</a>
         <a class="nav-gh" href="https://github.com/Shane-Stevens-Git" rel="noopener">GitHub</a>
       </nav>
     </div>
@@ -202,6 +203,80 @@
               <img src="images/ray-final.webp" width="800" height="450" loading="lazy" alt="Ray tracer render of many small colored spheres with three large ones in the foreground, with depth of field.">
               <figcaption>Final scene</figcaption>
             </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Project 03: GravSim ============ -->
+    <section class="project reveal" id="gravsim" style="--accent: var(--blue); --accent-soft: var(--blue-soft);">
+      <div class="wrap">
+        <header class="project-head">
+          <span class="index">03</span>
+          <div>
+            <h2>GravSim</h2>
+            <p class="tagline">A 2D gravity sandbox where every body pulls on every other.</p>
+          </div>
+        </header>
+
+        <div class="project-grid">
+          <div class="project-copy">
+            <p>
+              Drop asteroids, moons, planets, gas giants, stars, and spacecraft into an empty
+              scene, then click-drag to throw them into orbit. Every body attracts every other
+              body with real inverse-square gravity, so orbits, slingshots, collisions, and
+              ejections all emerge from the physics instead of being scripted.
+            </p>
+            <p>
+              Runs from source with Python, or as a single portable .exe on Windows with
+              nothing to install.
+            </p>
+
+            <ul class="tags" aria-label="Built with">
+              <li>Python</li>
+              <li>Pygame</li>
+              <li>NumPy</li>
+              <li>Windows .exe</li>
+            </ul>
+
+            <ul class="features">
+              <li><strong>True n-body gravity.</strong> Velocity-Verlet integration, vectorized with NumPy, no central-body shortcut.</li>
+              <li><strong>Throw or place an orbit.</strong> Drag to throw a body, or use the orbit tool to drop one straight into a stable path.</li>
+              <li><strong>Merge, shatter, or bounce.</strong> Collisions tear bodies apart inside a Roche limit, or fragment on a hard enough hit.</li>
+              <li><strong>Live diagnostics.</strong> A gravity field heatmap, an energy and momentum graph, Lagrange points, and predicted orbits.</li>
+              <li><strong>Scenes and rewind.</strong> Save and load scene files, plus up to 60 seconds of rewind.</li>
+            </ul>
+
+            <div class="actions">
+              <a class="btn primary" href="https://shane-stevens-git.github.io/GravSim/" rel="noopener">Project page <span aria-hidden="true">&rarr;</span></a>
+              <a class="btn" href="https://github.com/Shane-Stevens-Git/GravSim" rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-media">
+            <figure class="shot window zoomable">
+              <img src="images/gravsim-orbits.webp" width="1280" height="800" loading="lazy"
+                   alt="GravSim showing several bodies on stable orbits around a central star, with the controls panel on the left.">
+              <figcaption>Stable orbits around the sun, with the controls panel open.</figcaption>
+            </figure>
+
+            <div class="thumbs">
+              <figure class="shot zoomable">
+                <img src="images/gravsim-galaxy.webp" width="1280" height="800" loading="lazy"
+                     alt="A galaxy-like scene in GravSim with many small bodies swirling around a dense core.">
+                <figcaption>Galaxy scene</figcaption>
+              </figure>
+              <figure class="shot zoomable">
+                <img src="images/gravsim-field.webp" width="1280" height="800" loading="lazy"
+                     alt="The gravity field overlay in GravSim, shown as a colored heatmap with contour lines around each body.">
+                <figcaption>Gravity field overlay</figcaption>
+              </figure>
+              <figure class="shot zoomable">
+                <img src="images/gravsim-shatter.webp" width="1280" height="800" loading="lazy"
+                     alt="A body shattering into debris after a fast collision in GravSim.">
+                <figcaption>Shatter collision</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
